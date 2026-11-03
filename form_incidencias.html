@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>reserva cuadros comb</title>
+</head>
+<body>
+
+    <form action="" method="GET">
+        
+        <!-- Datos del usuario -->
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Nombre y apellidos"><br><br>
+            
+            <input type="radio" id="alumno" name="tipo_usuario" value="alumno" checked>
+            <label for="alumno">Alumno</label><br>
+            
+            <input type="radio" id="profesor" name="tipo_usuario" value="profesor">
+            <label for="profesor">Profesor</label>
+        </fieldset>
+        <br>
+
+        <!-- Dónde se produce -->
+        <fieldset>
+            <legend>Dónde se produce</legend>
+            <input type="radio" id="departamento" name="lugar" value="departamento">
+            <label for="departamento">Todo el departamento</label><br>
+            
+            <input type="radio" id="aula" name="lugar" value="aula">
+            <label for="aula">Todo el aula</label><br>
+            
+            <input type="radio" id="equipo" name="lugar" value="equipo" checked>
+            <label for="equipo">Sólo en un equipo</label><br><br>
+            
+            <label for="identificacion">Iddentifica el dpto, aula o equipo</label>
+            <input type="text" id="identificacion" name="identificacion">
+        </fieldset>
+        <br>
+
+        <!-- Información sobre la incidencia -->
+        <fieldset>
+            <legend>Información sobre la incidencia</legend>
+            <label for="descripcion">Descripción de la incidencia</label><br>
+            <textarea id="descripcion" name="descripcion" rows="6" cols="60" placeholder="Describe el problema con detalle"></textarea><br><br>
+            
+            <label>Nivel de urgencia:</label><br>
+            <input type="radio" id="alto" name="urgencia" value="alto">
+            <label for="alto">Alto</label><br>
+            
+            <input type="radio" id="medio" name="urgencia" value="medio">
+            <label for="medio">Medio</label><br>
+            
+            <input type="radio" id="bajo" name="urgencia" value="bajo" checked>
+            <label for="bajo">Bajo</label><br><br>
+            
+            <input type="checkbox" id="aviso" name="aviso" value="si" checked>
+            <label for="aviso">Me gustaría ser avisado por email cuando se resuelva la incidencia</label>
+        </fieldset>
+
+        <br>
+        <!-- Botones -->
+        <button type="submit" value="entrar"><a href="./UD2_Html/Ejercicios/img.png"></a></button>
+        <button type="reset">Limpiar</button>
+
+    </form>
+
+</body>
+</html>
